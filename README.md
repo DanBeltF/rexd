@@ -1,8 +1,7 @@
-# Modernist Theme
+# ReactiveXD Web Page
 
-[Demo the Theme](http://orderedlist.github.com/modernist/)
+[Web Page](https://danbeltf.github.io/rexd/)
 
-This is the raw HTML and styles that are used for the *modernist* theme on [GitHub Pages](http://pages.github.com/).
 
 # SCSS
 

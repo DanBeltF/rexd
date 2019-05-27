@@ -30,6 +30,16 @@
         <h1>Installation</h1>
         <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
 		<ol>
+        <li><p>Download the sources</p>
+        <pre><code>git clone -b "master" https://github.com/DanBeltF/reactivexd.git</code></pre></li>
+        <li><p>Build</p>
+        <pre><code>cd co.edu.escuelaing.reactivexd.parent-master/</code></pre>
+		<pre><code>mvn clean install -DskipTests=true</code></pre></li>
+        </ol>
+        <p>The framework uses rewriting  logic  and  includes  a  model  of  the  distributed  base  application,  a  model of  observables  and observers, and  a  model  for  complex predicate  constructs supporting explicit time manipulation. </p>
+        
+		<h1>Build sample projects</h1>
+		<ol>
         <li><p>Access the directory</p>
         <pre><code>cd ..</code></pre>
 		<pre><code>cd test/Datarace</code></pre>
@@ -38,16 +48,7 @@
 		<p>On a new terminal</p>
 		<pre><code>mvn exec:java -Dexec.mainClass="local.RunExecute"</code></pre></li>
         </ol>
-        <p>The framework uses rewriting  logic  and  includes  a  model  of  the  distributed  base  application,  a  model of  observables  and observers, and  a  model  for  complex predicate  constructs supporting explicit time manipulation. </p>
-        
-		<h1>Build sample projects</h1>
-		<ol>
-        <li><p>Download the sources</p>
-        <pre><code>git clone -b "master" https://github.com/DanBeltF/reactivexd.git</code></pre></li>
-        <li><p>Build</p>
-        <pre><code>cd co.edu.escuelaing.reactivexd.parent-master/</code></pre>
-		<pre><code>mvn clean install -DskipTests=true</code></pre></li>
-        </ol>
+		
 		
       </section>
     </div>
