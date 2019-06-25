@@ -84,7 +84,7 @@
         </ol>        
         <hr/>
 		<h1>Build sample projects</h1>
-	      	<h2>Hardcoded messages</h2>
+	      	<h3>Hardcoded messages</h3>
 		<ol>
         <li><p>Go back to the root directory</p>
         <pre><code>cd ..</code></pre>
@@ -92,7 +92,21 @@
         <li><p>Run the generated application</p>
         <pre><code>mvn clean test</code></pre>
         </ol>
-		<h2>Group Chat</h2>
+	      <hr/>
+	      <h2>Semi-smooth messages</h2>
+		<ol>
+        <li><p>Go back to the root directory</p>
+        <pre><code>cd ..</code></pre>
+		<pre><code>cd /Smooth-World/</code></pre>
+        <li><p>Compile and generate the sources</p>
+        <pre><code>mvn clean compile</code></pre>
+	<li><p>Run the generated application</p>
+        <pre><code>mvn exec:java -Dexec.mainClass="local.StartExecute"</code></pre>
+	<li><p>Open another command line and run</p>
+        <pre><code>mvn exec:java -Dexec.mainClass="local.RunExecute"</code></pre>
+        </ol>
+	      <hr/>
+		<h3>Group Chat</h3>
 	        <ol>
         <li><p>Go back to the root directory</p>
         <pre><code>cd ..</code></pre>
