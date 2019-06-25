@@ -71,7 +71,9 @@
         <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
 	<div class="highlight">
         <pre><span class="o">Heads up!</span>
-	<span class="no">If your build fail, try the same command over again. Sometimes the network brings up errors at the time of requesting online dependencies</span></pre>
+	<span class="no">If your build fail, try the same command over again.</span>
+	<span class="no">Sometimes the network brings up errors at the time</span>
+	<span class="no">of requesting online dependencies</span></pre>
         </div>      
 	<ol>
         <li><p>Download the sources</p>
@@ -82,6 +84,7 @@
         </ol>        
         <hr/>
 		<h1>Build sample projects</h1>
+	      	<h2>Hardcoded messages</h2>
 		<ol>
         <li><p>Go back to the root directory</p>
         <pre><code>cd ..</code></pre>
@@ -89,7 +92,18 @@
         <li><p>Run the generated application</p>
         <pre><code>mvn clean test</code></pre>
         </ol>
-		
+		<h2>Group Chat</h2>
+	        <ol>
+        <li><p>Go back to the root directory</p>
+        <pre><code>cd ..</code></pre>
+		<pre><code>cd /GroupChat/</code></pre>
+        <li><p>Run the generated application on two or more terminals</p>
+        <pre><code>java GroupChat [224.0.0.0-239.255.255.255] 1234</code></pre>
+	<div class="highlight">
+        <pre><span class="s2">The range of IPs shouldn't include 224.0.0.0</span></pre>
+        </div>	
+	<li><p>Type 'Exit' to finish the session</p>
+        </ol>
       </section>
     </div>
     <footer>
