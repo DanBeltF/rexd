@@ -60,44 +60,51 @@
 	<p>The framework uses rewriting  logic  and  includes  a  model  of  the  distributed  base  application,  a  model of  observables  and observers, and  a  model  for  complex predicate  constructs supporting explicit time manipulation. </p>
 	<hr/>
 	<h1>Requirements</h1>
+	<p>Open a terminal and check that you have installed the corresponding technologies:</p>
 	<ol>
 	<li><p>Java</p>
-	<pre><code>java -version</code></pre></li>
+	<pre><code>$ java -version</code></pre></li>
 	<li><p>Maven</p>
-	<pre><code>mvn -v</code></pre></li>
+	<pre><code>$ mvn -v</code></pre></li>
 	</ol>
 	<hr/>
         <h1>Installation</h1>
         <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
-	<div class="highlight">
-        <pre><span class="o">Heads up!</span>
-	<span class="no">If your build fail, try the same command over again.</span>
-	<span class="no">Sometimes the network brings up errors at the time</span>
-	<span class="no">of requesting online dependencies</span></pre>
+	<div class="highlight"><pre><span class="o">Heads up!</span>
+	<span class="no">If your build fail, try the same command again.</span>
+	<span class="no">Sometimes the network brings up errors when</span>
+	<span class="no">requesting online dependencies</span></pre>
         </div>      
 	<ol>
-        <li><p>Download the sources</p>
+        <li><p>Download the sources from the GitHub repository</p>
         <pre><code>git clone -b "master" https://github.com/DanBeltF/reactivexd.git</code></pre></li>
-        <li><p>Build</p>
+        <li><p>Build the language</p>
         <pre><code>cd co.edu.escuelaing.reactivexd.parent-master</code></pre>
 		<pre><code>mvn clean install -DskipTests=true</code></pre></li>
         </ol>        
         <hr/>
-		<h1>Build sample projects</h1>
+		<h1>Build the sample projects</h1>
 	      	<h3>Hardcoded messages</h3>
+	      	<blockquote>
+			<p>This example executes the test directory that prints hardcoded messages.</p>
+		</blockquote>
 		<ol>
         <li><p>Go back to the root directory</p>
         <pre><code>cd ..</code></pre>
-		<pre><code>cd /Hello-World/</code></pre>
-        <li><p>Run the generated application</p>
+	<pre><code>cd test</code></pre>
+	<pre><code>cd /Hello-World/</code></pre>
+        <li><p>Run the application's test</p>
         <pre><code>mvn clean test</code></pre>
         </ol>
 	      <hr/>
-	      <h2>Semi-smooth messages</h2>
-		<ol>
+	      <h3>Semi-smooth messages</h3>
+	      <blockquote>
+			<p>In this example there are events which are exchanged, they take place in a non-controled context where a sequence of messages is followed. To simulate this use case, there will be two programs that interact with the JBossCache, used to save and read data.</p>
+	      </blockquote>
+	<ol>
         <li><p>Go back to the root directory</p>
         <pre><code>cd ..</code></pre>
-		<pre><code>cd /Smooth-World/</code></pre>
+	<pre><code>cd /Smooth-World/</code></pre>
         <li><p>Compile and generate the sources</p>
         <pre><code>mvn clean compile</code></pre>
 	<li><p>Run the generated application</p>
@@ -105,8 +112,11 @@
 	<li><p>Open another command line and run</p>
         <pre><code>mvn exec:java -Dexec.mainClass="local.RunExecute"</code></pre>
         </ol>
-	      <hr/>
+	      	<hr/>
 		<h3>Group Chat</h3>
+	      	<blockquote>
+			<p>Finally a group chat example is presented by sending messages from one node (terminal console/computer/server) to another.</p>
+	      	</blockquote>
 	        <ol>
         <li><p>Go back to the root directory</p>
         <pre><code>cd ..</code></pre>
@@ -116,7 +126,7 @@
 	<div class="highlight">
         <pre><span class="s2">The range of IPs shouldn't include 224.0.0.0</span></pre>
         </div>	
-	<li><p>Type 'Exit' to finish the session</p>
+	<li><p>Type <strong>Exit</strong> to finish the session</p>
         </ol>
       </section>
     </div>
